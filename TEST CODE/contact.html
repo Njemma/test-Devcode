@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>salut</h1>
+    <form action="index.php" method="POST" class="card p-4 text-success" style="margin: 0 8%; margin-top: 2%;">
+        <div class="row text-success justify-content-center display-4" style="font-family: 'Roboto', sans-serif;">
+            <h1 class="row text-success justify-content-center display-4" style="font-family: 'Roboto', sans-serif;">
+                Formulaire d'enregistrement des utilisateurs</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="nom" class="form-label">Nom :</label>
+            <input type="text" required class="form-control" id="nom" name="nom" placeholder="Entrez votre nom">
+        </div>
+
+        <div class="form-group">
+            <label for="prenom" class="form-label">Prénom :</label>
+            <input type="text" required class="form-control" id="prenom" name="prenom"
+                placeholder="Entrez votre prénom">
+        </div>
+
+        <div class="form-group">
+            <label for="genre" class="form-label">Genre :</label>
+            <select class="form-control" id="genre" name="genre">
+                <option value="">Sélectionnez votre genre</option>
+                <option value="Masculin">Masculin</option>
+                <option value="Feminin">Féminin</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="naissances" class="form-label">Date de naissance :</label>
+            <input type="date" required class="form-control" id="naissances" name="naissances"
+                placeholder="Entrez votre date de naissance">
+        </div>
+
+        <div class="form-group">
+            <label for="ville" class="form-label">Ville de naissance :</label>
+            <input type="text" required class="form-control" id="ville" name="ville"
+                placeholder="Entrez votre ville de naissance">
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="pays" required class="form-label">Pays de naissance :</label>
+            <input type="text" class="form-control" id="pays" name="pays" placeholder="Entrez votre pays de naissance">
+        </div>
+        <button type="submit" name="submit" class="btn btn-success">Ajouter</button>
+    </form>
 </body>
+
 </html>
